@@ -1,8 +1,8 @@
 from django.contrib import admin
-from .models import New
+from .models import Tag
 
 
-@admin.register(New)
+@admin.register(Tag)
 class AuthorAdmin(admin.ModelAdmin):
     list_display = ('id', 'name','slug')
     search_fields = ('name', )
